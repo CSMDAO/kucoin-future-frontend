@@ -11,7 +11,7 @@ const Histories = () => {
   const [histories, setHistories] = useState([] as History[]);
 
   useEffect(() => {
-    fetch(`${process.env.REACT_APP_API_URL}/`, {
+    fetch(`${process.env.REACT_APP_API_URL}/api`, {
       headers: {
         accepts: "application/json",
       },
