@@ -83,7 +83,7 @@ const App = () => {
   };
 
   useEffect(() => {
-    fetch(`/balance`, {
+    fetch(`${process.env.REACT_APP_API_URL}/balance`, {
       headers: {
         accepts: "application/json",
       },
